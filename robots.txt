@@ -1,0 +1,5 @@
+# One page, no crawl traps, nothing to withhold.
+User-agent: *
+Allow: /
+
+Sitemap: https://uibeka.github.io/sitemap.xml

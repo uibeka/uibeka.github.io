@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Uchenna Ibeka</title>
+    <meta
+      name="description"
+      content="Uchenna Ibeka is the founder of AsymmetrIQ Labs, a quantitative research laboratory working on autonomous decision systems. M.A. in Labor Studies and Employment Relations, Rutgers University. Writing on systems governance and building under uncertainty."
+    />
+    <link rel="canonical" href="https://uibeka.github.io/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://uibeka.github.io/" />
+    <meta property="og:title" content="Uchenna Ibeka" />
+    <meta
+      property="og:description"
+      content="Founder of AsymmetrIQ Labs. Quantitative research on autonomous decision systems and systems governance."
+    />
+    <meta property="og:image" content="https://uibeka.github.io/uchenna-ibeka.jpg" />
+    <meta property="profile:first_name" content="Uchenna" />
+    <meta property="profile:last_name" content="Ibeka" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@willofgod_" />
+    <meta name="twitter:title" content="Uchenna Ibeka" />
+    <meta
+      name="twitter:description"
+      content="Founder of AsymmetrIQ Labs. Quantitative research on autonomous decision systems and systems governance."
+    />
+    <meta name="twitter:image" content="https://uibeka.github.io/uchenna-ibeka.jpg" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Uchenna Ibeka" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/uchenna-ibeka.jpg" />
+
+    <!--
+      The @id is deliberately asymmetriq.ai's, not this domain's. It is the same
+      @id emitted by the founder page, every blog byline, the author archive and
+      Organization.founder. A different @id here would describe a second person
+      who happens to share the name, which is the opposite of the intent: one
+      entity, described by two sites that point at each other.
+
+      `url` is this page's own address, which is currently a github.io
+      subdomain rather than uchennaibeka.com. That domain was still
+      unregistered, and a canonical pointing at a host that does not resolve
+      makes Google drop the page outright, so publishing here now beats waiting.
+      When the domain is registered and attached, GitHub Pages 301s this origin
+      to it; swap the six absolute URLs in this file, plus robots.txt and
+      sitemap.xml, at that point. The reciprocal link lives in sameAs below.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://asymmetriq.ai/uchenna-ibeka#person",
+        "name": "Uchenna Ibeka",
+        "givenName": "Uchenna",
+        "familyName": "Ibeka",
+        "jobTitle": "Founder",
+        "description": "Founder of AsymmetrIQ Labs, a quantitative research laboratory developing autonomous decision systems for adversarial, non-stationary environments.",
+        "url": "https://uibeka.github.io/",
+        "mainEntityOfPage": "https://uibeka.github.io/",
+        "image": "https://uibeka.github.io/uchenna-ibeka.jpg",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "https://orcid.org/0009-0003-6742-270X"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AsymmetrIQ Labs",
+          "url": "https://asymmetriq.ai"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Rutgers University",
+          "url": "https://www.rutgers.edu"
+        },
+        "knowsAbout": [
+          "Quantitative research",
+          "Machine learning",
+          "Autonomous systems",
+          "Systems governance",
+          "Financial markets",
+          "People operations",
+          "Labor studies and employment relations"
+        ],
+        "sameAs": [
+          "https://asymmetriq.ai/uchenna-ibeka",
+          "https://orcid.org/0009-0003-6742-270X",
+          "https://www.linkedin.com/in/uchennaibeka",
+          "https://www.crunchbase.com/person/uchenna-ibeka",
+          "https://about.me/uchennaibeka",
+          "https://keybase.io/uibeka",
+          "https://github.com/uibeka",
+          "https://x.com/willofgod_",
+          "https://www.instagram.com/luckyuchiano",
+          "https://www.youtube.com/@luckyuchiano",
+          "https://www.facebook.com/Uibeka",
+          "https://soundcloud.com/uchenna-ibeka"
+        ]
+      }
+    </script>
+
+    <style>
+      /* System fonts only. A webfont on a one-page site costs a round trip and
+         a flash of unstyled text to buy a typeface nobody came here for. */
+      :root {
+        --bg: #0a1628;
+        --surface: #0f1e33;
+        --border: #1e3a5f;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --dim: #64748b;
+        --accent: #00d4aa;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .skip {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: var(--accent);
+        color: var(--bg);
+        padding: 0.75rem 1.25rem;
+        font-weight: 600;
+        z-index: 10;
+      }
+      .skip:focus {
+        left: 0;
+      }
+
+      .wrap {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 5rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+
+      header.masthead {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .portrait {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        background: var(--surface);
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.4rem;
+        font-weight: 600;
+      }
+
+      .role {
+        color: var(--muted);
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      h2 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: var(--dim);
+        font-weight: 600;
+        margin: 0 0 1rem;
+      }
+
+      section {
+        margin-top: 3rem;
+        border-top: 1px solid var(--border);
+        padding-top: 2rem;
+      }
+      section.lede {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      p {
+        margin: 0 0 1.1rem;
+        color: var(--muted);
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      .lede p {
+        color: var(--text);
+        font-size: 1.09rem;
+      }
+
+      .entry {
+        margin-bottom: 1.75rem;
+      }
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+      .entry h3 {
+        font-size: 1.02rem;
+        font-weight: 600;
+        margin: 0 0 0.15rem;
+        color: var(--text);
+      }
+      .entry .meta {
+        font-size: 0.9rem;
+        color: var(--dim);
+        margin: 0 0 0.5rem;
+      }
+      .entry p {
+        font-size: 0.97rem;
+        margin: 0;
+      }
+
+      ul.writing {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.writing li {
+        margin-bottom: 1.15rem;
+      }
+      ul.writing li:last-child {
+        margin-bottom: 0;
+      }
+      ul.writing .where {
+        display: block;
+        font-size: 0.85rem;
+        color: var(--dim);
+        margin-top: 0.15rem;
+      }
+
+      ul.links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+      }
+      ul.links a {
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin-top: 3.5rem;
+        border-top: 1px solid var(--border);
+        padding-top: 1.5rem;
+        font-size: 0.88rem;
+        color: var(--dim);
+      }
+      footer p {
+        color: var(--dim);
+        font-size: 0.88rem;
+      }
+
+      @media (max-width: 34rem) {
+        body {
+          font-size: 16px;
+        }
+        .wrap {
+          padding: 3rem 1.25rem 4rem;
+        }
+        header.masthead {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.15rem;
+        }
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <div class="wrap">
+      <header class="masthead">
+        <img
+          class="portrait"
+          src="/uchenna-ibeka.jpg"
+          alt="Uchenna Ibeka"
+          width="96"
+          height="96"
+        />
+        <div>
+          <h1>Uchenna Ibeka</h1>
+          <p class="role">Founder, AsymmetrIQ Labs</p>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="lede">
+          <p>
+            I run a quantitative research laboratory working at the intersection of machine learning
+            and financial markets. The question underneath the work is a general one: can a system
+            learn to act sensibly in an environment that is adversarial, non-stationary, and
+            unforgiving of overconfidence?
+          </p>
+          <p>
+            I came to it from institutional analysis rather than from engineering, and that shows in
+            what I find interesting about it. The part of an autonomous system I care most about is
+            not what it can do. It is what it is not permitted to do, and whether that limit holds
+            when the system is confident.
+          </p>
+        </section>
+
+        <section>
+          <h2>Current work</h2>
+          <div class="entry">
+            <h3>AsymmetrIQ Labs</h3>
+            <p class="meta">Founder</p>
+            <p>
+              A quantitative research laboratory developing autonomous decision systems. The current
+              system is in development. Its architecture separates the components that generate
+              decisions from an independent governance layer that constrains them, and gives that
+              layer real authority rather than an advisory role, on the principle that a constraint
+              which loses to a sufficiently confident model is not a constraint.
+              <a href="https://asymmetriq.ai">asymmetriq.ai</a>
+            </p>
+          </div>
+          <div class="entry">
+            <h3>Automaton, Conway Research</h3>
+            <p class="meta">Open-source contributor</p>
+            <p>
+              Contributor to an open-source autonomous-agent project. My merged work has centred on
+              the agent discovery layer: the on-chain registry lookups that let independent agents
+              find one another.
+              <a href="https://github.com/Conway-Research/automaton">View the project</a>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Writing</h2>
+          <ul class="writing">
+            <li>
+              <a href="https://asymmetriq.ai/blog/signal-vs-noise">Signal vs. Noise</a>
+              <span class="where">asymmetriq.ai</span>
+            </li>
+            <li>
+              <a href="https://asymmetriq.ai/blog/autonomous-trading-systems"
+                >Building Autonomous Trading Systems</a
+              >
+              <span class="where">asymmetriq.ai</span>
+            </li>
+            <li>
+              <a href="https://asymmetriq.ai/blog/understanding-funding-rates"
+                >Understanding Funding Rates</a
+              >
+              <span class="where">asymmetriq.ai</span>
+            </li>
+          </ul>
+          <p style="margin-top: 1.5rem">
+            More at <a href="https://asymmetriq.ai/blog/author/uchenna-ibeka">asymmetriq.ai</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>Background</h2>
+          <div class="entry">
+            <h3>Payroll and people operations, digital asset industry</h3>
+            <p>
+              Work that sat where regulation meets operational reality: multi-jurisdiction payroll,
+              equity administration, and the controls that keep both auditable under scrutiny. It is
+              a useful place to learn that a control nobody can enforce is documentation rather than
+              a control, which is the same problem autonomous systems have.
+            </p>
+          </div>
+          <div class="entry">
+            <h3>M.A., Labor Studies and Employment Relations</h3>
+            <p class="meta">Rutgers University</p>
+            <p>
+              Institutional analysis at bottom: how rules, incentives, and enforcement produce
+              outcomes in complex systems full of participants pursuing their own interests, and why
+              formal authority so often diverges from effective authority. Markets pose the same
+              problem in different dress.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Interests</h2>
+          <p>
+            Quantitative research. Machine learning. Autonomous systems. Systems governance.
+            Financial markets. People operations. Labor studies and employment relations.
+          </p>
+        </section>
+
+        <section>
+          <h2>Elsewhere</h2>
+          <!-- rel="me" is the visible counterpart to the sameAs array above:
+               it tells a consumer these accounts belong to the same person. -->
+          <ul class="links">
+            <li>
+              <a rel="me" href="https://asymmetriq.ai/uchenna-ibeka">AsymmetrIQ Labs</a>
+            </li>
+            <li><a rel="me" href="https://www.linkedin.com/in/uchennaibeka">LinkedIn</a></li>
+            <li><a rel="me" href="https://orcid.org/0009-0003-6742-270X">ORCID</a></li>
+            <li>
+              <a rel="me" href="https://www.crunchbase.com/person/uchenna-ibeka">Crunchbase</a>
+            </li>
+            <li><a rel="me" href="https://github.com/uibeka">GitHub</a></li>
+            <li><a rel="me" href="https://about.me/uchennaibeka">about.me</a></li>
+            <li><a rel="me" href="https://x.com/willofgod_">X</a></li>
+          </ul>
+          <p style="margin-top: 1.5rem">
+            LinkedIn is the most reliable way to reach me.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Uchenna Ibeka. Founder, AsymmetrIQ Labs.</p>
+      </footer>
+    </div>
+  </body>
+</html>
