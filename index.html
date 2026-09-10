@@ -44,6 +44,12 @@
       who happens to share the name, which is the opposite of the intent: one
       entity, described by two sites that point at each other.
 
+      worksFor carries an @id for the same reason. asymmetriq.ai publishes its
+      Organization as https://asymmetriq.ai/#organization, whose founder points
+      back at the Person @id above. Without that identifier this node would be an
+      anonymous employer that merely shares a name, so the two halves of the
+      graph would describe one person at two unrelated companies.
+
       `url` is this page's own address, which is currently a github.io
       subdomain rather than uchennaibeka.com. That domain was still
       unregistered, and a canonical pointing at a host that does not resolve
@@ -72,6 +78,7 @@
         },
         "worksFor": {
           "@type": "Organization",
+          "@id": "https://asymmetriq.ai/#organization",
           "name": "AsymmetrIQ Labs",
           "url": "https://asymmetriq.ai"
         },
